@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "eggchallenge",
+  "version": "${version}",
+  "name": "eggchallenge",
+  "description": "Test",
+  "authors": [
+    "Secondairy"
+  ],
+  "contact": {
+    "repo": "https://github.com/Secondairy/EggChallenge"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/eggchallenge/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.secondairy.eggchallenge.client.eggchallengeClient"
+    ],
+    "main": [
+      "me.secondairy.eggchallenge.eggchallenge"
+    ]
+  },
+  "mixins": [
+    "eggchallenge.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}

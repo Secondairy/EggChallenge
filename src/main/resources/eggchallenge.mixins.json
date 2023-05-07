@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.secondairy.eggchallenge.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "net.minecraft.EggItemMixin",
+    "net.minecraft.client.gui.screen.ingame.HandledScreenMixin",
+    "net.minecraft.entity.player.PlayerInventoryMixin",
+    "net.minecraft.server.MinecraftServerMixin"
+  ],
+  "client": [
+    "net.minecraft.client.MinecraftClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
