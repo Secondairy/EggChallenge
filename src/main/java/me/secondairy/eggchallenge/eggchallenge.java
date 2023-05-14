@@ -8,11 +8,10 @@ import org.apache.logging.log4j.Logger;
 
 public class eggchallenge implements ModInitializer {
 
-    public static boolean EggChallengeFailed = false;
+    public static boolean hasFailed = false;
 
     public static Logger LOGGER = LogManager.getLogger();
 
-    public static final String MOD_ID = "eggchallenge";
     public static final String MOD_NAME = "EggChallenge";
 
     @Override

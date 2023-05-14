@@ -35,7 +35,7 @@ public class EggItemMixin {
                 cir.setReturnValue(fail);
                 cir.cancel();
             } else {
-                eggchallenge.EggChallengeFailed = true;
+                eggchallenge.hasFailed = true;
             }
         }
     }

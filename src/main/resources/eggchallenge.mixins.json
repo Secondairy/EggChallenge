@@ -10,7 +10,9 @@
     "net.minecraft.server.MinecraftServerMixin"
   ],
   "client": [
-    "net.minecraft.client.MinecraftClientMixin"
+    "net.minecraft.client.MinecraftClientMixin",
+    "net.minecraft.client.gui.screen.ingame.InventoryScreenMixin",
+    "net.minecraft.world.ClientWorldMixin"
   ],
   "injectors": {
     "defaultRequire": 1

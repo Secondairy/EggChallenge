@@ -15,15 +15,14 @@ public class MinecraftServerMixin {
     @Inject(method = "isHardcore", at = @At(value = "TAIL", target = "Lnet/minecraft/server/MinecraftServer;isHardcore()Z"), cancellable = true)
     public void isHardcore(CallbackInfoReturnable<Boolean> cir) {
 
-        if (eggchallenge.EggChallengeFailed)  {
+        if (eggchallenge.hasFailed)  {
             cir.setReturnValue(true);
         }
 
         cir.cancel();
     }
-
     @Inject(method = "createWorlds", at = @At(value="TAIL", target = "Lnet/minecraft/server/MinecraftServer;createWorlds(Lnet/minecraft/server/WorldGenerationProgressListener;)V"))
     public void createWorlds(WorldGenerationProgressListener worldGenerationProgressListener, CallbackInfo ci) {
-        eggchallenge.EggChallengeFailed = false;
+        eggchallenge.hasFailed = false;
     }
 }
