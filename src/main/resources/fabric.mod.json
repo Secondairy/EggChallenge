@@ -3,12 +3,12 @@
   "id": "eggchallenge",
   "version": "${version}",
   "name": "eggchallenge",
-  "description": "Test",
+  "description": "Secondairy's Egg Challenge Mod",
   "authors": [
     "Secondairy"
   ],
   "contact": {
-    "repo": "https://github.com/Secondairy/EggChallenge"
+    "repo": "https://github.com/Secondairy/Minecraft-EggChallenge"
   },
   "license": "All-Rights-Reserved",
   "icon": "assets/eggchallenge/icon.png",
